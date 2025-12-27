@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="hub" fetch="https://github.com" />
+
+ <!-- Common Trees -->
+ <project path="device/xiaomi/sm8250-common" name="gensis01/android_device_xiaomi_sm8250-common" remote="hub" revision="Afterlife-16" />
+ <project path="vendor/xiaomi/sm8250-common" name="gensis01/vendor_xiaomi_sm8250-common" remote="hub" revision="16"  />
+
+ <!-- Device Trees -->
+ <project path="device/xiaomi/pipa" name="gensis01/device_xiaomi_pipa" remote="hub" revision="Afterlife-16" />
+ <project path="vendor/xiaomi/pipa" name="gensis01/vendor_xiaomi_pipa" remote="hub" revision="16" />
+
+ <!-- Kernel Tree -->
+ <project path="kernel/xiaomi/sm8250" name="gensis01/kernel_xiaomi_pipa" remote="hub" revision="16" />
+
+ <!-- Hardware Trees -->
+ <project path="hardware/xiaomi" name="gensis01/hardware_xiaomi" remote="hub" revision="aosp-16" />
+
+ <!-- WFD Trees -->
+ <project path="vendor/qcom/wfd" name="PocoF3Releases/vendor_qcom_wfd" remote="hub" revision="bka" />
+ <project path="device/qcom/wfd" name="PocoF3Releases/device_qcom_wfd" remote="hub" revision="bka" />
+
+ <!-- keys -->
+<project path="vendor/afterlife-priv/keys" name="gensis01/vendor_afterlife_keys" remote="hub" revision="main" />
+
+ <!-- Device Settings -->
+<remove-project name="LineageOS/android_packages_resources_devicesettings" />
+<project path="packages/resources/devicesettings" name="PocoF3Releases/packages_resources_devicesettings" remote="hub" revision="aosp-16" />
+</manifest>
